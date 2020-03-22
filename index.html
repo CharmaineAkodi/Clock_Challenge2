@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SpaceX Clock</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="scripts/main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>Time on earth</h1>
+	</header>
+	<main>
+		<div id="dayFase">
+			<!-- <img src="images/cloud2.svg" id="moreClouds"> -->
+			<img src="images/sun.svg" id="sunIcon">
+			<!-- <img src="images/cloud.svg" id="cloudIcon"> -->
+		</div>
+		<br>
+		<div id="clock">
+			<p id="hours">00</p>
+			<p id="colon">:</p>
+			<p id="minutes">00</p>
+		</div>
+
+		<div id="dateDiv">
+			<p id="date"></p>
+		</div>
+		
+		<br>
+
+		<div id="timezoneList">
+			<label for="timezones">Choose a timezone:</label>
+			<select id="timezones">
+				<option value="asia">(UTC+08:00 Seoul, Tokio</option>
+  				<option selected value="europe">(UTC+01:00) Amsterdam, Berlin</option>
+  				<option value="suriname">(UTC-04:00) Paramaribo</option>
+  				<option value="hawaii">(UTC-11:00 Honolulu</option>	
+			</select>
+		</div>
+
+	</main>
+	<br>
+	<footer>
+		<div class="copyright">
+			<p class="copyright">&copy; Copyright 2020 Charmaine Akodi. All Rights Reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

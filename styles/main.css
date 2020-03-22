@@ -1,0 +1,108 @@
+html {
+	box-sizing: border-box;
+}
+*, 
+*:before,
+*:after{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background: rgb(43,122,170);
+	background: linear-gradient(0deg, rgba(43,122,170,1) 25%, rgba(115,209,218,1) 100%);
+}
+
+/*FONT&TEXT PLACEMENT*/
+h1 {
+	font-family: roboto, arial, sans-serif;
+	color: #111111;
+	text-align: center;
+	padding: 10px;
+}
+
+#clock {
+	font-family: roboto, arial, sans-serif;
+	font-size: 4em;
+	font-weight: 700;
+	text-align: center;
+}
+
+#dateDiv {
+	font-family: roboto, arial, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}
+
+label, #timezones {
+	font-family: roboto, arial, sans-serif;
+	text-align: center;
+}
+
+#timezoneList {
+	text-align: center;
+}
+
+.copyright {
+	font-family: roboto, arial, sans-serif;
+	color: #111111;
+	font-size: 0.87em;
+	text-align: center;
+}
+
+/*IMAGE*/
+#dayFase {
+	text-align: center;
+}
+
+/*#moreClouds {
+	width: 60%;
+}*/
+
+#sunIcon {
+	width: 40%;
+	animation:rotate 3s  infinite;
+	animation-timing-function: cubic-bezier(1,0,.5,1);
+}
+
+/*#cloudIcon {
+	width: 50%;
+}*/
+
+/*CLOCK*/
+#clock {
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.trans {
+	opacity: 0;
+}
+
+/*DATE*/
+
+
+/*TIMEZONE SELECTION*/
+#timezones {
+	background-color: white;
+	padding: 2px;
+}
+
+p.copyright {
+  	width: 100%;
+}
+
+div.copyright {
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 0.5rem;
+}
