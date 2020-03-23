@@ -1,0 +1,23 @@
+#clock {	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/*werkt niet en ik snap niet waarom*/
+@media only screen and (min-width: 760px) { 
+#earth {
+	width: 10%;
+}
+
+.earthBackground {
+	width: 10%;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+}

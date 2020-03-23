@@ -3,14 +3,12 @@ function showTime(){
 	var time = new Date();
 	var hours = time.getHours();
 	var minutes = time.getMinutes();
-	var seconds = time.getSeconds();
 
 	//add 0 from function (don't move)
 	hours = addZero(hours);
 	minutes = addZero(minutes);
-	seconds = addZero(seconds);
 
-	document.getElementById('time').innerHTML = hours + ":" + minutes + ":" + seconds;
+	document.getElementById('time').innerHTML = hours + ":" + minutes;
 
 	setInterval(showTime, 1000);
 
@@ -32,15 +30,25 @@ var showDate = date.getDate() + " " + months[date.getMonth()] + " " + date.getFu
 
 document.getElementById('date').innerHTML = showDate;
 
-//GREETING ACCORDING TO TIME
-function greeting(){
-	
-}
+//GREETING ACCORDING TO TIME, ICON & BACKGROUND CHANGE
+var time = new Date().getHours();
+	if (time = 6 && time < 12) {
+		document.getElementById('greeting').innerHTML = "Goodmorning, wake up traveler";
+	} if (time = 12 && time < 18) {
+		document.getElementById('greeting').innerHTML = "Good afternoon, traveler";
+		document.body.style.background = "#69CCEA";
+	} if (time = 18 && time <= 23){
+		document.getElementById('greeting').innerHTML = "Good evening, traveler";
+		document.body.style.background = "#C78A00";
+	}
+	if (time >= 0 && time < 6) {
+		document.getElementById('greeting').innerHTML = "Goodnight, sleep tight traveler";
+		document.body.style.background = "#150743";
+	 } //-- WERKT NIET?
 
-
-//TIMEZONE
-
-
-// //ICON & BACKGROUND CHANGE
-
-
+//MAIN ICON CHANGE
+// if (time >= 6 && time < 18){
+// 	document.getElementById("sun").style.backgroundImage ="url('images/sun.svg')";
+// } if (time >= 18 && time < 6){
+// 	document.getElementById("moon").style.backgroundImage ="url('images/half-moon.svg')";
+// } -- GEBEURT NIKS?
