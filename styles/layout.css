@@ -5,19 +5,31 @@
 }
 /*werkt niet en ik snap niet waarom*/
 @media only screen and (min-width: 760px) { 
-#earth {
-	width: 10%;
-}
+	#earth {
+		width: 500px;
+	}
 
-.earthBackground {
-	width: 10%;
-}
+	.earthBackground {
+		width: 90%;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
+	#earth {
+		width: 900px;
+	}
 
+	.earthBackground {
+		width: 90%;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
+	#earth {
+		width: 100px;
+	}
 
+	.earthBackground {
+		width: 90%;
+	}
 }
